@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Burger King</title>
+
+		<link rel="stylesheet" href="style.css">
+		<!-- Fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/d521bbec8a.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Script -->
+		<script src="script.js" defer></script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	</head>
+	<body
+		class="bg-menu bg-cover bg-no-repeat w-screen min-h-screen flex items-center md:flex-row gap-4 md:justify-center flex-col p-4 md:p-12 overflow-hidden bg-fixed"
+	>
+		<!-- Ordering card -->
+		<main
+			class="bg-zinc-800 w-72 md:w-96 rounded-lg p-4 text-center md:h-[350px] text-zinc-100 mb-4 md:mb-0"
+		>
+			<!-- Heading -->
+			<h1 class="font-bold uppercase text-xl py-2  md:text-2xl">
+				<i class="fa-solid fa-burger fa-xl"></i> Burger King!
+				<i class="fa-solid fa-burger fa-xl"></i>
+			</h1>
+
+			<!-- Select Burger -->
+			<h2 class="text-lg font-semibold pt-4 pb-2">Choose From Here</h2>
+			<select
+				class="select select-bordered w-full max-w-xs text-zinc-900"
+				required
+				id="burger"
+			>
+				<option>Non Veg</option>
+				<option selected>Veg</option>
+			</select>
+
+			<!-- Select Addon -->
+			<h2 class="text-lg font-semibold pt-4 pb-2">Choose Add On</h2>
+			<select
+				class="select select-bordered w-full max-w-xs text-zinc-900"
+				required
+				id="addOn"
+			>
+				<option>Crispy Cheese</option>
+				<option>Classic Chicken</option>
+				<option>Spicy Veg Burger</option>
+				<option>Loaded Chicken</option>
+				<option>Tandoori Chicken</option>
+				<option selected>None</option>
+			</select>
+
+			<!-- Submit -->
+			<button class="btn btn-sm btn-primary my-4 font-medium" id="order">
+				Place order
+			</button>
+		</main>
+		<!-- Ordering card -->
+		<section
+			class="bg-zinc-800 w-72 md:w-96 rounded-lg text-center text-zinc-100 md:h-[350px] overflow-y-scroll relative px-4"
+		>
+			<!-- Heading -->
+			<h2
+				class="font-bold uppercase text-xl pt-6 pb-4  md:text-2xl sticky top-0 bg-inherit z-10"
+			>
+				Order Queue
+			</h2>
+
+			<!-- Queue -->
+			<section id="queue" class="p-4 pb-6 flex flex-col gap-2">
+				<!-- Data renders here -->
+			</section>
+		</section>
+	</body>
+</html>
